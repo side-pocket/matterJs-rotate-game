@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>
+        👻</text></svg>" />
+    <title>MatterJs-Rotate-Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color:#f4eeff;
+            overflow: hidden;
+        }
+
+        .button {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 24px;
+            margin-right: 8px;
+            will-change: transform;
+            transition: all 0.2s ease;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-weight: 600;
+            font-size: 16px;
+            font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+            box-shadow: inset 0 0 0 2px #639a67;
+            border-radius: 3px;
+            background: transparent;
+            color: #639a67;
+            cursor: pointer;
+            background: #639a67;
+            color: #fff;
+            box-shadow: none;
+            padding: 8px 16px 9px;
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #5f6caf;
+        }
+        canvas {
+            width: 90vw;
+            max-width: 450px;
+            display: block;
+            transition: transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+        .control-area {
+            margin-bottom: 70px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="control-area">
+        <p>点击按钮，或者点击键盘左右方向键<br>Click the button, or the left and right arrow keys on the keyboard</p>
+        <button class="button" id="rotateLeft" data-direction="left">左转(Left)</button>
+        <button class="button" id="rotateRight" data-direction="right">右转(Right)</button>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>
