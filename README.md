@@ -24,10 +24,13 @@ yarn dev
 ### 截图
 
 #### pc 
-
-![](./src/asserts/pc.png)
+<div align="center">
+    <img src="./src/asserts/pc.png" width="300px"/>
+</div>
 
 #### native
+<div align="center">
+    <img src="./src/asserts/native.png"   width="300px"/>
+</div>
 
-![](./src/asserts/native.png)
 
